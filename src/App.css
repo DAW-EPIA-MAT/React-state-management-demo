@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 80vw;
+  height: 80vh;
+}
+
+.counter__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.counter__button {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: font-size 0.1s ease-in-out;
+
+  &:hover {
+    font-size: 1.15rem;
+  }
+}
+
+.counter__button--primary {
+  background-color: rgb(25, 135, 84);
+}
+
+.counter__button--secondary {
+  background-color: rgb(13, 110, 253);
+}
+
+.counter__score {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
